@@ -46,6 +46,8 @@ return {
         wrap = true, -- sets vim.opt.wrap
         linebreak = true, -- break on word boundaries
         showbreak = "↪ ",
+        -- Neovim 0.13 returns diffopt as a map; a string avoids AstroNvim's mixed-table conversion.
+        diffopt = "algorithm:histogram,linematch:60",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
