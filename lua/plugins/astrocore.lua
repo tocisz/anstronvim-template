@@ -46,6 +46,7 @@ return {
         wrap = true, -- sets vim.opt.wrap
         linebreak = true, -- break on word boundaries
         showbreak = "↪ ",
+        cmdheight = 1,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
